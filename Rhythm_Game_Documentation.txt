@@ -1,0 +1,49 @@
+5/11/23
+This is the documentation of the Rhythm minigame in the Steam Dreams project.
+The purpose of the file is to introduce future coders to the minigame's code and
+make it easier to keep working on it.  Best of luck. - Darius
+
+Table of Contents
+1. Minigame Goal
+2. Current Assets
+3. Planned Future Assets
+4. Current Features/Scripts
+5. Future Features
+6. Minigame Checklist
+
+1. Minigame Goal
+The goal of this minigame is to act as one of the repeated minigames that
+the player will play to progress in the game.  The player needs to click the
+corresponding button (arrow key or colored button) to gain points.  The song either
+ends when the song ends or the player makes too many mistakes.The score that the player has when the song ends will be used to determine how many stars the player will recieve.  The minigame is also intended to be used in endless mode where the player can play indefinitely as long as they don't make too many mistakes.  This minigame is also intended to be used for another game being made by this game development studio.  Contact Mr. Jerone Dodd for further information
+
+2. Current Assets(Scripts will be in section 4)
+arrow-(up/down/left/right).png - Arrows pngs taken from the Internet, they might be replaced in the polishing phase.
+TextMeshPro - A UI package used for all of the game's texts and buttons.
+Music Demo(1/2/3) - Demo audio files to depict the game's use of a backing song.  Will need to be replaced or modified to work for longer song lengths and to adapt to notes.
+SampleScene.unity - The scene currently used for the whole game.
+Buttons- 
+  Colored buttons(button0-3) - buttons that notes will overlap at the point when they should be clicked
+  Start button(startButton) - button that starts the game when clicked then disappears
+Noteholder/Notes - Used to store notes, 4 are created at the beginning and the rest are clones.
+Text(Score/Multiplier/Miss/Result) - Used to display player stats except results hich displays the game over message when the song is over.
+
+3. Future Assets(These are just based off the plan for the game at the time of writing)
+Improved results screen - Evolution of Result Text with more stats (ex. accuracy) and the amount of stars won.  Should be in middle of screen.
+Backing tracks - Audio files that are randomly selected as backing tracks for the game, should be loopable and not have any strong notes, to allow for use in different combonations.
+Note sounds - 4 audio files that play when the respective notes is clicked.  Should work well with the corresponding backing track.
+Background animations - Another game wants dancing animations of the main characters and hopefully we can also use them
+
+4. Current Features/Scripts
+UI features - Start game, Hit notes with buttons, Display stats
+BeatScroller - Sets song tempo and notes speed/movement while song is playing.
+ButtonScroller - Causes button to change color when corresponding key is clicked
+NoteObject - Checks if note is on button and when corresponding key is clicked, not is deleted and points are added.
+GameManager - Starts/stops game, creates new notes and updates scores/stats
+
+5. Future Features
+Click/touch functionality - Allow the player to click the button to hit the note, intended for touch screen play. (Medium difficulty)
+Sounds tuned to notes - When notes are correctly hit, a corresponding sound plays (Medium difficulty)
+Endless mode - Set song length to infinite and possibly make song continously harder
+Perfect hit - Get extra points for hitting a note when its in the middle of the button
+Results Update - After song opens a text box with more information and sprites
